@@ -162,6 +162,40 @@ p.special-font-paragraph {
         --num-cols: 2;
         --row-height: 200px;
     }
+
+    #navbar a {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+
+    #navbar a:first-child {
+        margin-left: 20px; /* Adjust the margin for the first link in the navbar */
+    }
+
+    #navbar a:nth-child(2) {
+        margin-left: 20px; /* Adjust the margin for the second link in the navbar */
+    }
+
+    .home-image-container {
+        padding: 10px; /* Adjust the padding for the home image container */
+    }
+
+    .home-image {
+        max-width: 100%; /* Ensure the home image is fully responsive */
+    }
+
+    h1 {
+        font-size: 40px; /* Adjust the font size for h1 on smaller screens */
+    }
+
+    p {
+        font-size: 20px; /* Adjust the font size for paragraphs on smaller screens */
+        padding: 0 20px; /* Adjust the padding for paragraphs on smaller screens */
+    }
+
+    p.special-font-paragraph {
+        font-size: 18px; /* Adjust the font size for special paragraphs on smaller screens */
+        padding: 0 10px; /* Adjust the padding for special paragraphs on smaller screens */
+    }
 }
 
 /* Footer styles */
@@ -171,7 +205,6 @@ footer {
     background-color: #17202a;
     padding: 1rem;
 }
-
 
 /* Style for the About page */
 body.page-about {
@@ -188,6 +221,26 @@ body.page-about {
     footer {
         padding: 15px;
     }
+
+    #navbar {
+        font-size: 24px; /* Adjust the font size for the navbar on even smaller screens */
+    }
+
+    #navbar a:first-child {
+        margin-left: 10px; /* Further adjust the margin for the first link in the navbar */
+    }
+
+    #navbar a:nth-child(2) {
+        margin-left: 10px; /* Further adjust the margin for the second link in the navbar */
+    }
+
+    .footerContainer {
+        font-size: 14px; /* Adjust the font size for the footer on even smaller screens */
+    }
+
+    footer a {
+        font-size: 24px; /* Adjust the font size for footer links on even smaller screens */
+    }
 }
 
 /* Common style for footer links */
@@ -198,7 +251,7 @@ footer a {
 /* Container for footer content */
 .footerContainer {
     /* Add styling as needed */
-}
+
 
 /* Social icons styles */
 .socialIcons {
