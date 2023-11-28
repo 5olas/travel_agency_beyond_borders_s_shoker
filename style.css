@@ -3,6 +3,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% of the viewport height */
+}
+
+/* Wrapper to push footer to the bottom */
+.wrapper {
+    flex: 1;
 }
 
 /* Style for special paragraphs on the home page */
@@ -115,6 +123,7 @@ p.special-font-paragraph {
     line-height: 0.5;
     text-align: center;
     padding: 0 20px;
+    overflow-wrap: break-word;
 }
 
 /* Image grid styles */
@@ -157,15 +166,12 @@ p.special-font-paragraph {
 
 /* Footer styles */
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center;
     background-color: #17202a;
     padding: 1rem;
-    z-index: 999;
 }
+
 
 /* Style for the About page */
 body.page-about {
@@ -214,7 +220,6 @@ footer a:hover {
 /* ... (Your existing CSS code) ... */
 
 
-/* Style for social icons within the footer */
 /* Style for social icons within the footer */
 .socialIcons {
     display: flex;
