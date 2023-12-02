@@ -24,21 +24,38 @@ body.page-home p.special-font-paragraph {
 /* Style for the first link in the navbar */
 #navbar a:first-child {
     font-family: 'Satisfy', cursive;
-    font-size: 50px;
+    font-size: 60px;
     white-space: nowrap;
     margin-left: 40px;
+    transition: font-size 0.3s;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+    #navbar a:first-child {
+        font-size: 2rem; /* Adjust the font size for smaller screens */
+        margin-left: 2rem; /* Adjust the margin for the first link in the navbar */
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 768px) {
+    #navbar a:first-child {
+        font-size: 1.5rem; /* Adjust the font size for even smaller screens */
+        margin-left: 10px; /* Further adjust the margin for the first link in the navbar */
+    }
 }
 
 /* Style for the second link in the navbar */
 #navbar a:nth-child(2) {
-    margin-left: 600px;
+    margin-left: 400px; /* Adjust the margin for the second link in the navbar */
 }
 
 /* Common style for all navbar links */
 #navbar a {
     text-decoration: none;
     color: #fdfefe;
-    width: 150px;
+    flex: 1;
     text-align: center;
     transition: color 0.3s, font-size 0.3s;
 }
@@ -119,8 +136,8 @@ p {
 /* Style for special paragraphs */
 p.special-font-paragraph {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 22px;
-    line-height: 0.5;
+    font-size: 2rem;
+    line-height: 1.5;
     text-align: center;
     padding: 0 20px;
     overflow-wrap: break-word;
@@ -168,7 +185,7 @@ p.special-font-paragraph {
     }
 
     #navbar a:first-child {
-        margin-left: 20px; /* Adjust the margin for the first link in the navbar */
+        margin-left: 2rem; /* Adjust the margin for the first link in the navbar */
     }
 
     #navbar a:nth-child(2) {
@@ -196,6 +213,14 @@ p.special-font-paragraph {
         font-size: 18px; /* Adjust the font size for special paragraphs on smaller screens */
         padding: 0 10px; /* Adjust the padding for special paragraphs on smaller screens */
     }
+
+    #navbar a.page-greece {
+        display: none; /* Hide the 'Greece' link in the navbar on smaller screens */
+    }
+
+    #navbar a.page-japan {
+        margin-left: 20px; /* Adjust the margin for the 'Japan' link in the navbar on smaller screens */
+    }
 }
 
 /* Footer styles */
@@ -218,6 +243,11 @@ body.page-about {
 
 /* Media query for even smaller screens */
 @media screen and (max-width: 768px) {
+    p.special-font-paragraph {
+        font-size: 1.5rem; /* Adjust the font size for smaller screens */
+        padding: 0 10px; /* Adjust the padding for smaller screens */
+    }
+
     footer {
         padding: 15px;
     }
@@ -252,9 +282,7 @@ footer a {
 .footerContainer {
     /* Add styling as needed */
 
-
-/* Social icons styles */
-.socialIcons {
+    /* Social icons styles */
     /* Add styling as needed */
 }
 
@@ -270,9 +298,6 @@ footer a:hover {
     transition: 0.5s;
 }
 
-/* ... (Your existing CSS code) ... */
-
-
 /* Style for social icons within the footer */
 .socialIcons {
     display: flex;
@@ -285,6 +310,7 @@ footer a:hover {
     padding: 0 4px; /* Adjust the padding as needed for spacing */
     position: relative;
     display: inline-block; /* Ensure inline-block to handle margin properly */
+    font-size: 24px; /* Adjust the font size for social icons */
 }
 
 /* Insert vertical bar between social icons */
@@ -308,9 +334,6 @@ footer a:hover {
     font-size: initial; /* Prevent enlarging */
     text-decoration: none;
 }
-
-
-/* ... (Your existing CSS code) ... */
 
 .opening-times {
     text-align: center;
